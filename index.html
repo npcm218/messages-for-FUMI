@@ -230,6 +230,7 @@
       const envelope = document.getElementById('envelope');
 
       btn.disabled = true;
+      if(window.goatcounter)window.goatcounter.count({path:'/omikuji',title:'おみくじ引いた',event:true});
       msgEl.classList.remove('visible','message-initial');
       msgEl.style.opacity = '0';
 
